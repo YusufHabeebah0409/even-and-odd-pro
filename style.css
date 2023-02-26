@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#class {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 500px;
+    text-align: center;
+    margin-top: 100px;
+    border-radius: 50px;
+    background-image: url(./big.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h3 {
+    font-size: 38px;
+    color: gold;
+    padding: 25px;
+}
+
+input {
+    background-color: crimson;
+    border: none;
+    height: 40px;
+    width: 300px;
+    border-radius: 30px;
+    font-size: 25px;
+    color: yellow;
+}
+button{
+    background-color: goldenrod;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    color: darkred;
+}
+button:hover{
+    background-color: green;
+    color: goldenrod;
+}

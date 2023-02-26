@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVEN AND ODD NUMBER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="class">
+        <marquee behavior="scroll" direction="left">
+           <h4 style="color:darkgreen ;font-size: 25px;"> Note This Only Reads For Even And Odd Number</h4>
+        </marquee> 
+        <h3> EVEN AND ODD NUMBER</h3>
+        <input type="text" id="userInput" placeholder="">
+        <button onclick="evenOdd()">CHECK</button>
+        <div id="disp" style="color:green ;font-size: 30px;"></div>
+    </div>
+    
+    <script>
+        function evenOdd() {
+            if (userInput.value == "") {
+                disp.innerHTML = "<h2> Kindly Enter a Number </h2>"
+            } else if (userInput.value % 2 == 0) {
+                disp.innerHTML = "<h2> Even Number </h2>"
+            } else if (userInput.value % 2 == 1) {
+                disp.innerHTML = "<h2> Odd Number </h2>"
+            } else {
+                disp.innerHTML = "<h2> Kindly Enter a Proper Number </h2>"
+            }
+            userInput.value =""
+        }
+    </script>
+</body>
+
+</html>
